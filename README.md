@@ -21,7 +21,7 @@ The returned aggregates contain:
 - Max value
 - Timestamp of the aggregated datapoint
 
-The user inserts parameters to shape the resulting data such as sensor ID, measurement type, resampling frequency and the timeframe.
+The user enters parameters to shape the resulting data such as sensor ID, measurement type, resampling frequency and the timeframe.
 
 3. / endpoint lists all the entries in the sensors table.
 
