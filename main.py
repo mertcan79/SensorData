@@ -78,7 +78,6 @@ def get_sensor(request_data: AggregatedSensorData) -> Dict:
             Min=('value', np.min),
             Max=('value', np.max))
         result_df = result_df.reset_index()
-        result_df = result_df[(request_data.min_time <= result_df.timestamp) & (request_data.max_time > result_df.timestamp)]
 
         return result_df.dropna().to_dict()
 
