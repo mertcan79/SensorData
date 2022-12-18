@@ -49,7 +49,7 @@ def create_sensor(sensor_to_insert: Sensor = Body(...)):
     cursor.close()
     connection.close()
 
-    return {"message": "Row inserted successfully"}
+    return {"message": "Entry created successfully."}
 
 
 @app.get("/get")
